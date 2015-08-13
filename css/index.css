@@ -1,0 +1,103 @@
+dd,li,ul{list-style:none;color:#565656}
+li,ol,ul{list-style:none;list-style-type:none;list-style-position:initial;list-style-image:initial}
+a:link{color:#0E0E0E;text-decoration:none}
+a:visited{color:#565656;text-decoration:none}
+a:hover{color:#000;text-decoration:none}
+a:active{color:#FFF;text-decoration:none}
+a{text-decoration:none;list-style:none;list-style-type:none}
+.top{width:950px;height:98px;margin:0 auto;border-bottom:3px solid #A51E32}
+.top .logo{margin-top:20px;width:265px;float:left}
+.phone{float:left;margin-top:50px;margin-left:100px}
+.sousuo{width:220px;float:left;height:25px;margin-top:50px;margin-left:30px}
+.sousuo input{border:1px solid #e6e6fa;height:25px}
+.nav{background:#fff;width:950px;height:40px;margin:0 auto}
+
+
+#navul li{float:left;margin-right:1px;width:138px;height:40px;position:relative;text-align:center;line-height:40px}
+#navul li.navhome{text-align:left;padding:0 0 0 40px;width:60px}
+#navul li a:link,#navul li a:visited{color:#000}
+#navul li ul{display:none;position:absolute;z-index:10000;top:38px;left:-1px;background:#fff}
+#navul li ul li{display:block;width:138px;float:none;margin-right:0;height:28px;position:relative;line-height:28px;font-size:12px}
+#navul li.navmoon{background:#fff;width:138px;height:38px;line-height:38px}
+#navul li.navmoon a{color:#000}
+#navul li.navhome a:hover{color:#BA4A5C}
+#navul li.navmoon ul{display:block}
+#navul li.navmoon ul a{display:block;width:138px;height:28px;line-height:28px;font-size:15px}
+#navul li.navmoon ul a:hover{background:#f5f5f5}
+#navul li a{font-size:17px}
+
+
+.slide{width:975px;height:285px;border:1px solid #D8D8D8;position:relative;overflow:hidden;margin:0 auto}
+.slide .hd{position:absolute;right:9px;bottom:10px;z-index:1;padding-left:2px}
+.slide .hd li{color:#BA4A5C;cursor:pointer;margin-left:3px;width:18px;height:18px;background:#fff;float:left;font-size:13px;line-height:18px;overflow:visible;text-align:center;opacity:70%;filter:alpha(opacity=70);border:1px solid #d8d8d8;margin-left:-1px}
+.slide .hd li.on{background:#BA4A5C;color:#fff;font-weight:700;opacity:100;filter:alpha(opacity=100);z-index:2;position:relative}
+.content1{width:975px;margin:0 auto;height:220px;padding:10px 25px 0 25px}
+.con1-lft{width:335px;height:210px;float:left}
+.focusbox{position:relative}
+.focusbox .hd{position:absolute;z-index:9999;left:248px;bottom:28px}
+.focusbox .hd ul{overflow-x:hidden;overflow-y:hidden;float:left;list-style:none}
+.focusbox .hd ul li{float:left;margin-right:1px;width:28px;height:12px;line-height:14px;text-align:center;background:#ddd;cursor:pointer;font-family:Arial;color:#666}
+.focusbox .hd ul li.on{background:red;color:#fff}
+.focusbox .bd{position:relative}
+.focusbox .bd .pic{line-height:0}
+.focusbox .bd{position:relative}
+.focusbox .bd .pic{line-height:0}
+.focusbox .bd .con{width:335px;height:28px;line-height:28px;text-align:center;font-weight:700;background:#f6f6f6}
+.con1-ctr{float:left;padding-left:20px; width: 405px;}
+.con1-ctr ul{float:left;font-size:18px;line-height:31px}
+.content2{width:975px;margin:0 auto;height:160px;padding:10px 25px 0 25px}
+.con2-lft{float:left}
+.con2-rht{float:left;width:220px;height:150px}
+
+.fina_nav{width:750px;height:111px;overflow:hidden;margin-top:26px;}
+.fina_nav li{width:136px;float:left;height:111px;}
+.fina_nav li a{display:block;width:136px;height:111px;text-indent:-9999em;background:url(http://pic.bankofchina.com/bocappd/bigpic/201412/W020141225420083674494.gif) no-repeat;font-family:"Microsoft YaHei","微软雅黑";font-size:16px;font-weight:bold;line-height:136px;}
+.fina_nav li.fina_nav1{width:154px;}
+.fina_nav li.fina_nav1 a{background-position:0px 0px;width:154px;}
+.fina_nav li.fina_nav2 a{background-position:-154px 0px;}
+.fina_nav li.fina_nav3 a{background-position:-290px 0px;}
+.fina_nav li.fina_nav4 a{background-position:-426px 0px;}
+.fina_nav li.fina_nav5{margin-right:0;width:154px;}
+.fina_nav li.fina_nav5 a{background-position:-562px 0px;width:154px;}
+.fina_nav li a.active{color:#ff6633;text-decoration:none;}
+.fina_nav li.fina_nav1 a.active{background-position:0px -111px;}
+.fina_nav li.fina_nav2 a.active{background-position:-154px -111px;}
+.fina_nav li.fina_nav3 a.active{background-position:-290px -111px;}
+.fina_nav li.fina_nav4 a.active{background-position:-426px -111px;}
+.fina_nav li.fina_nav5 a.active{background-position:-562px -111px;}
+
+
+
+.content3{width:975px;margin:0 auto;height:280px;padding:10px 25px 0 25px}
+.con3-lft{width:370px;height:280px;float:left}
+.con3-lft-top{width:370px;height:160px;border-bottom-style:dashed;border-width:1px}
+.con3-lft-bottom{margin-top:5px;line-height:28px;font-size:17px}
+.con3-rht{width:580px;height:280px;float:left;margin-left:20px}
+.con3-rht img{float:right}
+.con3-rht .hd{float:left;width:510px;height:30px;border-bottom:1px solid #e6e6fa}
+.con3-rht .hd li{float:left;font-size:18px;color:#565656;height:30px}
+.con3-rht .hd .on{border-bottom:2px solid #BA4A5C}
+.con3-rht .bd ul{float:left;font-size:15px;line-height:22px;margin-top:10px;margin-left:5px}
+.con3-rht span{float:right}
+.con3-rht .bd{width:580px;height:280px}
+.ud1{width:285px;float:left;font-size:18px}
+.content4{width:985px;height:480px;margin:0 auto}
+.con4-lft{width:740px;height:480px;float:left}
+.con4-lft-top{width:370px}
+.con4-lft-top .hd{float:left;width:730px;height:30px;border-bottom:1px solid #e6e6fa}
+.con4-lft-top .hd li{float:left;font-size:18px;color:#565656;height:30px}
+.con4-lft-top .hd .on{border-bottom:2px solid #BA4A5C}
+.con4-lft-top .bd ul{float:left;font-size:15px;line-height:22px;margin-top:10px;margin-left:5px}
+.con4-lft-top span{float:right}
+.con4-lft-top .bd{width:730px;height:240px}
+.con4-lft-bottom{width:370px}
+.con4-lft-bottom .hd{float:left;width:730px;height:30px;border-bottom:1px solid #e6e6fa}
+.con4-lft-bottom .hd li{float:left;font-size:18px;color:#565656;height:30px}
+.con4-lft-bottom .hd .on{border-bottom:2px solid #BA4A5C}
+.con4-lft-bottom .bd ul{float:left;font-size:15px;line-height:22px;margin-top:10px;margin-left:5px}
+.con4-lft-bottom span{float:right}
+.con4-lft-bottom .bd{width:730px;height:240px}
+.con4-rht{margin-left:10px;width:230px;height:480px;float:left}
+.bottom{width:980px;height:80px;margin:0 auto;border:1px solid #e6e6fa}
+.footer{width:980px;height:110px;margin:0 auto;margin-top:30px}
+

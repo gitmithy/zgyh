@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <script language="javascript" type="text/javascript" src="http://zt.10yan.com/html/zgyh/js/jquery1.42.min.js"></script>
+        <script language="javascript" type="text/javascript" src="http://zt.10yan.com/html/zgyh/js/jquery.SuperSlide.2.1.1.js"></script>
+		<script language="JavaScript" type="text/javascript" src="http://zt.10yan.com/html/zgyh/js/jquery.cxscroll.js" ></script>
+		<script language="JavaScript" type="text/javascript" src="http://zt.10yan.com/html/zgyh/js/script.js" ></script>	
+		<title></title>
+<style type="text/css">
+/*reset*/
+*{margin:0;padding:0;list-style-type:none;}
+*html,*html body /* 修正IE6振动bug */{
+    background-image:url(about:blank);
+    background-attachment:fixed;
+}
+body{
+    font-family:"Microsoft Yahei","Hiragino Sans GB" ,Arial,Lucida,Verdana,SimSun,Helvetica,sans-serif;
+    /*font-size : 62.5%; px数值除以10，然后换上em作为单位*/
+    /*min-width:980px;*/
+    font-size:13px;
+}
+a,img{border:none;text-decoration:none;}
+a{blr:expression(this.onFocus=this.blur());} /*去掉a标签的虚线框，避免出现奇怪的选中区域*/
+/*a:active {test:expression(target="_blank");}*/
+:focus{outline:0;}
+label{cursor:pointer;}
+img{vertical-align:middle;}
+table{empty-cells:show;border-collapse:collapse;border-spacing:0;}
+h1{font-size:1.6em;}h2,h3,h4{font-size:1.4em;}h5,h6{font-size:1.2em;}
+input{border:none;}
+textarea{overflow:scroll;}
+
+a, input,textarea, .hover-delay {
+    font-family:"Microsoft Yahei","Hiragino Sans GB", Arial,Lucida,Verdana,SimSun,Helvetica,sans-serif;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+input.none-radius{
+    border-radius:0;
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+}
+input::-ms-clear{ display:none;}  //去掉输入框的叉叉
+.clear{clear:both;}
+.txt-indent{text-indent:-999px;overflow:hidden;}
+input[type=text],input[type=tel],input[type=email]{
+-webkit-appearance: none;
+ box-shadow: none;}			
+/*reset*/
+dd,li,ul{list-style:none;color:#565656}
+li,ol,ul{list-style:none;list-style-type:none;list-style-position:initial;list-style-image:initial}
+a:link{color:#0E0E0E;text-decoration:none}
+a:visited{color:#565656;text-decoration:none}
+a:hover{color:#000;text-decoration:none}
+a:active{color:#FFF;text-decoration:none}
+a{text-decoration:none;list-style:none;list-style-type:none}
+.top{width:950px;height:98px;margin:0 auto;border-bottom:3px solid #A51E32}
+.top .logo{margin-top:20px;width:265px;float:left}
+.phone{float:left;margin-top:50px;margin-left:100px}
+.sousuo{width:220px;float:left;height:25px;margin-top:50px;margin-left:30px}
+.sousuo input{border:1px solid #e6e6fa;height:25px}
+.nav{background:#fff;width:950px;height:40px;margin:0 auto}
+#navul li{float:left;margin-right:1px;width:135px;height:40px;position:relative;text-align:center;line-height:40px}
+#navul li.navhome{text-align:left;padding:0 0 0 40px;width:60px}
+#navul li a:link,#navul li a:visited{color:#000}
+#navul li ul{display:none;position:absolute;z-index:10000;top:38px;left:-1px;background:#fff}
+#navul li ul li{display:block;width:135px;float:none;margin-right:0;height:28px;position:relative;line-height:28px;font-size:12px}
+#navul li.navmoon{background:#fff;width:135px;height:38px;line-height:38px}
+#navul li.navmoon a{color:#000}
+#navul li.navhome a:hover{color:#BA4A5C}
+#navul li.navmoon ul{display:block}
+#navul li.navmoon ul a{display:block;width:135px;height:28px;line-height:28px;font-size:15px}
+#navul li.navmoon ul a:hover{background:#f5f5f5}
+#navul li a{font-size:17px}
+
+.main{width: 1050px; margin: 0 auto;}	
+.box{background:#fff;border:1px solid #fcfcfc;}
+.list{width:100%;float:left;}
+.list dl{padding:20px; padding-top: 10px;}
+.list dt{height:40px;line-height:40px;border-bottom:1px solid #BA4A5C;}
+.list dd{padding:10px;line-height:30px;}
+.list dd li span{float:right;}	
+.con-lft{width: 700px; float: left;}
+.list-box{
+	margin: 10px 0 0 20px;
+	width: 720px;	
+}
+
+.text-c {text-align:center;width:100%;height:40px; padding:14px 0 10px; font-family:宋体 }
+.text-c a { display:inline-block; height:22px; line-height:22px; background:#fff; border:1px solid #e3e3e3; text-align:center; color:#333; padding:0 10px}
+.text-c a.a1 { background:url({IMG_PATH}admin_img/pages.png) no-repeat 0 5px; width:56px; padding:0 }
+.text-c a:hover { background:#f1f1f1; color:#000; text-decoration:none }
+.text-c span { display:inline-block; height:22px; line-height:22px; background:#5a85b2; border:1px solid #5a85b2; color:#fff; text-align:center;padding:0 10px}	
+
+.cat-area{width: 340px; float: left;}
+.cat-content{width: 320px; padding: 10px;  float: left;}
+.cat-content ul{float: left;}
+
+
+.con-rht{width: 300px; float: left; margin-left: 50px;}
+.con-rht-top{padding-left: 50px;}
+.con-rht-ctr{padding-left: 50px;}
+.con-rht-bottom{padding-left: 50px;}
+
+.bottom{width:980px;height:80px;margin:0 auto;border:1px solid #e6e6fa; float: left;margin-top:30px;}
+.footer{width:980px;height:110px;margin:0 auto;margin-top:30px; float: left;}
+</style>
+	</head>
+	<body>
+		<div class="top">
+			<div class="logo">  <a><img src="http://zt.10yan.com/html/zgyh/img/logo.png" /> </a>      </div>
+			<div class="phone"><img src="http://zt.10yan.com/html/zgyh/img/phone.png" />  </div>
+			<div class="sousuo">
+						<form action="http://127.0.0.1/index.php" method="get" target="_blank">
+							<input type="hidden" name="m" value="search">
+							<input type="hidden" name="c" value="index">
+							<input type="hidden" name="a" value="init">
+							<input type="hidden" name="typeid" value="" id="typeid">
+							<input type="hidden" name="siteid" value="1" id="siteid">
+							<input type="text" class="text" name="q" id="q"><input type="submit" value="搜 索" class="button">
+						</form>
+			</div>
+		</div>	
+		<div class="nav">
+			<ul id="navul" class="cl">
+							<li class="navhome"><a href="http://zt.10yan.com/html/zgyh/">首页</a></li>
+							<li>
+								<a href="#">分行形象</a>
+								<ul>
+									<li><a href="http://zt.10yan.com/html/zgyh/wzxw/">文字新闻</a></li>
+									<li><a href="http://zt.10yan.com/html/zgyh/xhd/">图片新闻</a></li>
+
+								</ul>
+							</li>
+							<li>
+								<a href="#">理财产品</a>
+								<ul>
+									<li><a href="http://zt.10yan.com/html/zgyh/lccp/cpgg/">产品公告</a></li>
+									<li><a href="http://zt.10yan.com/html/zgyh/lccp/cpjz/">产品净值</a></li>
+
+								</ul>
+							</li>
+							<li>
+								<a href="#">国际金融</a>
+								<ul>
+									<li><a href="http://zt.10yan.com/html/zgyh/cglx/">出国留学</a></li>
+									<li><a href="http://zt.10yan.com/html/zgyh/gjsl/">国际商旅</a></li>
+									<li><a href="http://zt.10yan.com/html/zgyh/tzym/">投资移民</a></li>
+									<li><a href="http://zt.10yan.com/html/zgyh/wpgz/">外派工作</a></li>
+
+								</ul>
+							</li>
+							<li>
+								<a href="#">银行卡</a>
+								<ul>
+									<li><a href="http://zt.10yan.com/html/zgyh/rktj/">热卡推荐</a></li>
+									<li><a href="http://zt.10yan.com/html/zgyh/gdkp/">高端卡片</a></li>
+
+								</ul>
+							</li>
+							<li>
+								<a href="#">优惠活动</a>
+								<ul>
+									<li><a href="http://zt.10yan.com/html/zgyh/yhsh/">优惠商户</a></li>
+									<li><a href="http://zt.10yan.com/html/zgyh/jfdh/">积分兑换</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="http://zt.10yan.com/html/zgyh/bjfw/">便捷服务</a>
+							</li>
+						</ul>				
+				<script  type="text/javascript"> 
+				$(document).ready(function(){
+					
+					$(".navbg").capacityFixed();
+					
+					$("#navul > li").not(".navhome").hover(function(){
+						$(this).addClass("navmoon");
+					},function(){
+						$(this).removeClass("navmoon");
+					});					
+				});
+				</script>				
+		</div>	
+		<div class="main">		
+			<div class="list box">
+				<dl>
+					<dt>您的位置：首页 &gt; {catpos($catid)} 列表</dt>
+				</dl>	
+			</div>
+			<div class="con-lft">
+				{php $j=1;}
+				{loop subcat($catid) $v}
+				{php if($v['type']!=0) continue;}
+					<div class="cat-area" {if $j%2==1}style="margin-right:10px"{/if}>
+						<div class="cat-nav">
+							<ul style="font-size: 18px; color: #565656; border-bottom: 1px solid lavender; height: 25px;">
+								<li class="con3nav">
+									<a>{$v[catname]}</a>								
+								</li>
+								<li style="float:right"><a style="margin-right: 5px; " href="{$v[url]}"><img src="hhttp://zt.10yan.com/html/zgyh/img/more.png"></a></li>
+							
+								
+							</ul>
+						</div>
+						<div class="cat-content">
+							{pc:content action="lists" catid="$catid" num="6" order="id DESC"}
+							<ul>
+								{loop $data $r}
+									<li><a href="{$r[url]}" target="_blank">{$r[title]}</a></li>
+								{/loop}
+							</ul>
+							{/pc}
+						</div>						
+					</div>
+				{$j++}
+				{/loop}				
+			</div>
+			<div class="con-rht">
+				<div class="con-rht-top">
+					<ul>
+						<li><a href=""><img src="http://zt.10yan.com/html/zgyh/img/button1.png"> </a>  </li>
+						<li><a href=""><img src="http://zt.10yan.com/html/zgyh/img/button2.png"> </a>  </li>
+						<li><a href=""><img src="http://zt.10yan.com/html/zgyh/img/button3.png"> </a>  </li>
+						<li><a href=""><img src="http://zt.10yan.com/html/zgyh/img/button4.png"> </a>  </li>
+					</ul>					
+									
+				</div>
+				<div class="con-rht-ctr" style="width: 210px; margin-top: 20px;">
+					<ul style="text-align: center; height: 28px; font-size: 20px; background-color: #BA4A5C;"><a style="color: #FFFFFF;">便捷服务</a></ul>
+					<ul style="text-align: center; height: 110px; font-size: 18px; border: 1px solid lavender; padding-top: 20px;">
+						<li><a href="">1.出国前服务</a></li>
+						<li><a href="">2.出国期间服务</a></li>
+						<li><a href="">3.回国以后服务</a></li>
+					</ul>						
+				</div>
+				<div class="con-rht-bottom" style="width: 210px; margin-top: 20px;">
+						<ul style="text-align: center; height: 28px; font-size: 20px; background-color: #BA4A5C;"><a style="color: #FFFFFF;">实用信息</a></ul>
+						<ul style="padding-left: 10px; padding-right: 10px;   height: 390px; font-size: 18px; border: 1px solid lavender; padding-top: 20px;">
+							<li><a href="">·民生缴费</a></li>
+							<li><a href="">·申请信用卡    </a></li>
+							<li><a href="">·快捷分期</a></li>
+							<li><a href="">·信用卡还款</a></li>
+							<li><a href="">·服务收费价格</a></li>
+							<li><a href="">·中国银行电子银行企业服务转账汇款费率表</a></li>
+							<li><a href="">·个人网上银行注册登陆常见问题</a></li>
+							<li><a href="">·个人网上银行首次登陆指引</a> </li>
+						</ul>									
+				</div>				
+			</div>
+			<div class="bottom">
+				<a href=""><img src="http://zt.10yan.com/html/zgyh/img/bottom1.png"> </a>
+				<a href=""><img src="http://zt.10yan.com/html/zgyh/img/bottom2.png"> </a>
+				<a href=""><img src="http://zt.10yan.com/html/zgyh/img/bottom3.png"> </a>
+				<a href=""><img src="http://zt.10yan.com/html/zgyh/img/bottom4.png"> </a>			
+			</div>
+			<div class="footer">
+				<a>
+					<img src="http://zt.10yan.com/html/zgyh/img/footer.png" />
+				</a>						
+			</div>			
+		</div>		
+	</body>
+</html>

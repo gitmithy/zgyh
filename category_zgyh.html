@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="keywords" content="{$SEO['keyword']}">
+		<meta name="description" content="{$SEO['description']}">
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	    <script language="javascript" type="text/javascript" src="js/jquery1.42.min.js"></script>
+        <script language="javascript" type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+		<script language="JavaScript" type="text/javascript" src="js/jquery.cxscroll.js" ></script>
+		<script language="JavaScript" type="text/javascript" src="js/script.js" ></script>
+
+	</head>
+	<body>
+		<div class="top">
+			<div class="logo">  <a><img src="img/logo.png" /> </a>      </div>
+			<div class="phone"><img src="img/phone.png" />  </div>
+			<div class="sousuo">
+						<form action="http://127.0.0.1/index.php" method="get" target="_blank">
+							<input type="hidden" name="m" value="search">
+							<input type="hidden" name="c" value="index">
+							<input type="hidden" name="a" value="init">
+							<input type="hidden" name="typeid" value="" id="typeid">
+							<input type="hidden" name="siteid" value="1" id="siteid">
+							<input type="text" class="text" name="q" id="q"><input type="submit" value="搜 索" class="button">
+						</form>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		<div class="nav">
+			<ul id="navul" class="cl">
+							<li class="navhome"><a href="#">首页</a></li>
+							<li>
+								<a href="#">分行形象</a>
+								<ul>
+									<li><a href="#">公司简介</a></li>
+									<li><a href="#">领导关怀</a></li>
+									<li><a href="#">经营团队</a></li>
+									<li><a href="#">发展历程</a></li>
+									<li><a href="#">组织机构</a></li>
+
+								</ul>
+							</li>
+							<li>
+								<a href="#">理财产品</a>
+								<ul>
+									<li><a href="#">公司新闻</a></li>
+									<li><a href="#">基层动态</a></li>
+									<li><a href="#">行业咨询</a></li>
+
+								</ul>
+							</li>
+							<li>
+								<a href="#">国际金融</a>
+								<ul>
+									<li><a href="#">党建学习</a></li>
+									<li><a href="#">资质荣誉</a></li>
+									<li><a href="#">员工风貌</a></li>
+									<li><a href="#">文化生活</a></li>
+									<li><a href="#">先进典型</a></li>
+
+								</ul>
+							</li>
+							<li>
+								<a href="#">银行卡</a>
+
+							</li>
+							<li>
+								<a href="#">优惠活动</a>
+
+							</li>
+							<li>
+								<a href="#">便捷服务</a>
+								<ul>
+									<li><a href="#">通知公告</a></li>
+									<li><a href="#">业务交流</a></li>
+									<li><a href="#">政策法规</a></li>
+									<li><a href="#">下载中心</a></li>
+								</ul>
+							</li>
+			
+						</ul>
+					
+				
+				<script  type="text/javascript"> 
+				$(document).ready(function(){
+					
+					$(".navbg").capacityFixed();
+					
+					$("#navul > li").not(".navhome").hover(function(){
+						$(this).addClass("navmoon");
+					},function(){
+						$(this).removeClass("navmoon");
+					});
+					
+				});
+				</script>
+				
+		</div>
+		<div class="slide">
+			<div class="hd">
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+			</div>
+			<div class="bd">
+				<ul>
+				{pc:content action="lists" catid="690" order="id desc" thumb="1" moreinfo=""  num="4" }
+				{loop $data $n $r}					
+					<li><a href="{$r[url]}" target="_blank"><img src="{$r[thumb]}" width="975px" height="283px"/></a></li>
+				{/loop}
+				{/pc}	
+				</ul>
+			</div>	
+		</div>
+		<script type="text/javascript">jQuery(".slide").slide({ mainCell:".bd ul",effect:"fold",autoPlay:true,delayTime:200 });</script>
+		
+		
+		
+		
+		<div class="main">
+			<div class="content1">
+				<div class="con1-lft">
+					<div class="focusbox" id="focusbox">
+						<div class="hd">
+							<ul>
+								<li class="on">1</li>
+								<li class="">2</li>
+								<li class="">3</li>								
+							</ul>
+						</div>
+						<div class="bd">
+							<ul style="padding-left: 0px;">
+								<li style="display: list-item;">
+									<div class="bd">
+										<a href="http://zt.10yan.com/html//qydjzt/hd/676_6679.html" target="_blank"><img src="img/photo1.png" width="335px" height="185px"></a>
+									</div>
+									<div class="con">关于发售2015年第二期个人大额存单</div>										
+								</li>
+								<li style="display: none;">
+									<div class="bd">
+										<a href="http://zt.10yan.com/html//qydjzt/hd/676_6678.html" target="_blank"><img src="img/photo1.png" width="335px" height="185px"></a>
+									</div>
+									<div class="con">关于发售2015年第二期个人大额存单</div>										
+								</li>
+								<li style="display: none;">
+									<div class="bd">
+										<a href="http://zt.10yan.com/html//qydjzt/hd/676_6677.html" target="_blank"><img src="img/photo1.png" width="335px" height="185px"></a>
+									</div>
+									<div class="con">关于发售2015年第二期个人大额存单</div>										
+								</li>
+																								
+							</ul>
+						</div>
+				    </div>
+				    <script type="text/javascript">
+						jQuery(".focusbox").slide({ mainCell:".bd ul",autoPlay:true, delaytime:700, trigger:"click"});
+					</script>		
+				</div>
+				<div class="con1-ctr">
+					<ul>
+								<li><a href="http://zt.10yan.com/html/2014/61//news/95_709.html" target="_blank" style="font-family: 宋体;">中国银行湖北分行保卫部副总经理...</a></li>
+								<li><a href="http://zt.10yan.com/html/2014/61//news/95_709.html" target="_blank" style="font-family: 宋体;">公司举办管理人员培训班</a></li>
+								<li><a href="http://zt.10yan.com/html/2014/61//news/95_709.html" target="_blank" style="font-family: 宋体;">公司召开第二届第一次工会会员代表大会</a></li>
+								<li><a href="http://zt.10yan.com/html/2014/61//news/95_709.html" target="_blank" style="font-family: 宋体;">中国银行湖北省分行领导到我司检查指导工作</a></li>
+								<li><a href="http://zt.10yan.com/html/2014/61//news/95_709.html" target="_blank" style="font-family: 宋体;">公司组织员工参加《弘扬社会主义核心价值观》..</a></li>
+								<li><a href="http://zt.10yan.com/html/2014/61//news/95_709.html" target="_blank" style="font-family: 宋体;">中国银行湖北省分行领导到我司检查指导工作</a></li>
+
+					</ul>
+				</div>
+				<div class="rht">
+					<ul>
+						<li><a href=""><img src="img/button1.png"> </a>  </li>
+						<li><a href=""><img src="img/button2.png"> </a>  </li>
+						<li><a href=""><img src="img/button3.png"> </a>  </li>
+						<li><a href=""><img src="img/button4.png"> </a>  </li>
+					</ul>		
+				</div>
+			
+			
+			</div>
+			<div class="content2">
+				<div class="con2-lft">
+                	<div class="fina_nav">
+                        <ul class="clearfix">
+                            <li class="fina_nav1"><a href="#" class="active">出国留学</a></li>
+                            <li class="fina_nav2"><a href="#">国际商旅</a></li>
+                            <li class="fina_nav3"><a href="#">投资移民</a></li>
+                            <li class="fina_nav4"><a href="#">外派工作</a></li>
+                            <li class="fina_nav5"><a href="#">来华人士</a></li>                        
+                        </ul>
+                    </div>
+				</div>
+				<div class="con2-rht">
+					<ul style="text-align: center; height: 28px; font-size: 20px; background-color: #BA4A5C;"><a style="color: #FFFFFF;">便捷服务</a></ul>
+					<ul style="text-align: center; height: 110px; font-size: 18px; border: 1px solid lavender; padding-top: 20px;">
+						<li><a href="">1.出国前服务</a></li>
+						<li><a href="">2.出国期间服务</a></li>
+						<li><a href="">3.回国以后服务</a></li>
+					</ul>
+					
+				</div>
+				
+			</div>
+			<div class="content3">
+				<div class="con3-lft">
+					<div class="con3-lft-top">
+						<a href=""><img src="img/people.png" width="104px" height="142px"  style="float: left;"/></a>
+						<ul style="margin-left: 120px; font-size: 16px; line-height: 25px;">
+							
+							<li style="font-size: 18px; color:#BA4A5C ;">理财师简介</li>
+							<li>  资格证书：金融理财师（AFP）</li>
+							<li>具备初级经济专业资格、保险代理人从业资格
+							专业擅长：各类银行业务；基金债券业务；综合理财规划</li> 	
+						</ul>
+					</div>
+					<div class="con3-lft-bottom">
+						<ul>
+							<li><a href="">中国银行在巴黎举办“2015中法中小企业</a></li>
+							<li><a href="">海内外联动 中行护航丝路“新通道”</a></li>
+							<li><a href="">中银国际协助天彩控股于香港成功上市</a></li>
+						</ul>
+					</div>		
+				</div>
+				<div class="con3-rht">
+					<div class="slideTxtBox">
+						<div class="hd">
+							<ul>
+								<li class="on"><a href="#">理财产品</a></li>
+								<li class="" style="margin-left: 10px;" style="font-family: '宋体';"><a href="#">外汇</a></li>
+								<li class="" style="margin-left: 10px;" style="font-family: '宋体';"><a href="#">黄金</a></li>
+								<li class="" style="margin-left: 10px;" style="font-family: '宋体';"><a href="#">证券</a></li>
+								<li class="" style="margin-left: 10px;" style="font-family: '宋体';"><a href="#">债券</a></li>
+								<li class="" style="margin-left: 10px;" style="font-family: '宋体';"><a href="#">基金</a></li>
+
+							</ul>
+						</div>
+						<div class="bd">
+							<ul style="display: block;">
+								<div class="ud1">
+									<ul style="margin-top: 20px; margin-bottom: 10px;">理财产品公告</ul>
+									<ul style="float: left; line-height: 28px;" class="ud1">
+										<li><a href="http://www.SuperSlide2.com" target="_blank">中国打破了世界软件巨头规则</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">口语：会说中文就能说英语！</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">农场摘菜不如在线学外语好玩</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">数理化老师竟也看学习资料？</a></li>										
+									</ul>
+									<ul style="float: right;"><a href="" >更多</a></ul>
+								</div>
+								<div class="ud1">
+									<ul style="margin-top: 20px; margin-bottom: 10px;">理财产品公告</ul>
+									<ul style="float: left; line-height: 28px;" class="ud1">
+										<li><a href="http://www.SuperSlide2.com" target="_blank">中国打破了世界软件巨头规则</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">口语：会说中文就能说英语！</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">农场摘菜不如在线学外语好玩</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">数理化老师竟也看学习资料？</a></li>										
+									</ul>
+									<ul style="float: right;"><a href="" >更多</a></ul>
+								</div>
+							</ul>
+							<ul style="display: block;">
+								<div class="ud1">
+									<ul style="margin-top: 20px; margin-bottom: 10px;">理财产品公告</ul>
+									<ul style="float: left; line-height: 28px;" class="ud1">
+										<li><a href="http://www.SuperSlide2.com" target="_blank">中国打破了世界软件巨头规则</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">口语：会说中文就能说英语！</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">农场摘菜不如在线学外语好玩</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">数理化老师竟也看学习资料？</a></li>										
+									</ul>
+									<ul style="float: right;"><a href="" >更多</a></ul>	
+								</div>
+								<div class="ud1">
+									<ul style="margin-top: 20px; margin-bottom: 10px;">理财产品公告</ul>
+									<ul style="float: left; line-height: 28px;" class="ud1">
+										<li><a href="http://www.SuperSlide2.com" target="_blank">中国打破了世界软件巨头规则</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">口语：会说中文就能说英语！</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">农场摘菜不如在线学外语好玩</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">数理化老师竟也看学习资料？</a></li>										
+									</ul>
+									<ul style="float: right;"><a href="" >更多</a></ul>	
+								</div>
+							</ul>
+							<ul style="display: block;">
+								<div class="ud1">
+									<ul style="margin-top: 20px; margin-bottom: 10px;">理财产品公告</ul>
+									<ul style="float: left; line-height: 28px;" class="ud1">
+										<li><a href="http://www.SuperSlide2.com" target="_blank">中国打破了世界软件巨头规则</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">口语：会说中文就能说英语！</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">农场摘菜不如在线学外语好玩</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">数理化老师竟也看学习资料？</a></li>										
+									</ul>
+									<ul style="float: right;"><a href="" >更多</a></ul>	
+								</div>
+								<div class="ud1">
+									<ul style="margin-top: 20px; margin-bottom: 10px;">理财产品公告</ul>
+									<ul style="float: left; line-height: 28px;" class="ud1">
+										<li><a href="http://www.SuperSlide2.com" target="_blank">中国打破了世界软件巨头规则</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">口语：会说中文就能说英语！</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">农场摘菜不如在线学外语好玩</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">数理化老师竟也看学习资料？</a></li>										
+									</ul>
+									<ul style="float: right;"><a href="" >更多</a></ul>	
+								</div>
+							</ul>							
+							<ul style="display: block;">
+								<div class="ud1">
+									<ul style="margin-top: 20px; margin-bottom: 10px;">理财产品公告</ul>
+									<ul style="float: left; line-height: 28px;" class="ud1">
+										<li><a href="http://www.SuperSlide2.com" target="_blank">中国打破了世界软件巨头规则</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">口语：会说中文就能说英语！</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">农场摘菜不如在线学外语好玩</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">数理化老师竟也看学习资料？</a></li>										
+									</ul>
+									<ul style="float: right;"><a href="" >更多</a></ul>	
+								</div>
+								<div class="ud1">
+									<ul style="margin-top: 20px; margin-bottom: 10px;">理财产品公告</ul>
+									<ul style="float: left; line-height: 28px;" class="ud1">
+										<li><a href="http://www.SuperSlide2.com" target="_blank">中国打破了世界软件巨头规则</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">口语：会说中文就能说英语！</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">农场摘菜不如在线学外语好玩</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">数理化老师竟也看学习资料？</a></li>										
+									</ul>
+									<ul style="float: right;"><a href="" >更多</a></ul>	
+								</div>
+							</ul>
+							<ul style="display: block;">
+								<div class="ud1">
+									<ul style="margin-top: 20px; margin-bottom: 10px;">理财产品公告</ul>
+									<ul style="float: left; line-height: 28px;" class="ud1">
+										<li><a href="http://www.SuperSlide2.com" target="_blank">中国打破了世界软件巨头规则</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">口语：会说中文就能说英语！</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">农场摘菜不如在线学外语好玩</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">数理化老师竟也看学习资料？</a></li>										
+									</ul>
+									<ul style="float: right;"><a href="" >更多</a></ul>	
+								</div>
+								<div class="ud1">
+									<ul style="margin-top: 20px; margin-bottom: 10px;">理财产品公告</ul>
+									<ul style="float: left; line-height: 28px;" class="ud1">
+										<li><a href="http://www.SuperSlide2.com" target="_blank">中国打破了世界软件巨头规则</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">口语：会说中文就能说英语！</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">农场摘菜不如在线学外语好玩</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">数理化老师竟也看学习资料？</a></li>										
+									</ul>
+									<ul style="float: right;"><a href="" >更多</a></ul>	
+								</div>
+							</ul>
+							<ul style="display: block;">
+								<div class="ud1">
+									<ul style="margin-top: 20px; margin-bottom: 10px;">理财产品公告</ul>
+									<ul style="float: left; line-height: 28px;" class="ud1">
+										<li><a href="http://www.SuperSlide2.com" target="_blank">中国打破了世界软件巨头规则</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">口语：会说中文就能说英语！</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">农场摘菜不如在线学外语好玩</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">数理化老师竟也看学习资料？</a></li>										
+									</ul>
+									<ul style="float: right;"><a href="" >更多</a></ul>	
+								</div>
+								<div class="ud1">
+									<ul style="margin-top: 20px; margin-bottom: 10px;">理财产品公告</ul>
+									<ul style="float: left; line-height: 28px;" class="ud1">
+										<li><a href="http://www.SuperSlide2.com" target="_blank">中国打破了世界软件巨头规则</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">口语：会说中文就能说英语！</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">农场摘菜不如在线学外语好玩</a></li>
+										<li><a href="http://www.SuperSlide2.com" target="_blank">数理化老师竟也看学习资料？</a></li>										
+									</ul>
+									<ul style="float: right;"><a href="" >更多</a></ul>	
+								</div>
+							</ul>							
+						</div>
+					</div>
+					<script type="text/javascript">jQuery(".slideTxtBox").slide();</script>			
+				</div>		
+			</div>
+			<div class="content4">
+					<div class="con4-lft">
+						<div class="con4-lft-top">
+							<div class="slideTxtBox">
+								<div class="hd">
+									<ul style="float: left; font-size: 18px;color: #565656;">热卡推荐</ul>
+									<ul style="float: right;">
+										<li class="on"><a href="#">信用卡</a></li>
+										<li class="" style="margin-left: 10px;"><a href="#">借记卡</a></li>	
+									</ul>
+								</div>						
+								<div class="bd">
+									<ul style="display: block;">	
+											<ul style="float: left; line-height: 28px; margin-left: 5px;" >
+												<li style="float: left; width: 180px; text-align: center;"><a href=""><img src="img/card1.png" width="155px" height="100px"><p>中国银行无限信用卡</p> </a></li>
+												<li style="float: left; width: 180px; text-align: center;"><a href=""><img src="img/card2.png" width="155px" height="100px"><p>全币种国际芯片卡</p> </a></li>
+												<li style="float: left; width: 180px; text-align: center;"><a href=""><img src="img/card3.png" width="155px" height="100px"><p>长城环球通白金信用卡</p> </a></li>
+												<li style="float: left; width: 180px; text-align: center;"><a href=""><img src="img/card4.png" width="155px" height="100px"><p>长城美国运通卡</p> </a></li>
+											</ul>
+											<ul style="float: right;"><a href="">更多>></a></ul>
+											
+		
+									</ul>
+									<ul style="display: block;">								
+											<ul style="float: left; line-height: 28px; margin-left: 5px;" >
+												<li style="float: left; width: 180px; text-align: center;"><a href=""><img src="img/card1.png" width="155px" height="100px"><p>中国银行无限信用卡</p> </a></li>
+												<li style="float: left; width: 180px; text-align: center;"><a href=""><img src="img/card2.png" width="155px" height="100px"><p>全币种国际芯片卡</p> </a></li>
+												<li style="float: left; width: 180px; text-align: center;"><a href=""><img src="img/card3.png" width="155px" height="100px"><p>长城环球通白金信用卡</p> </a></li>
+												<li style="float: left; width: 180px; text-align: center;"><a href=""><img src="img/card4.png" width="155px" height="100px"><p>长城美国运通卡</p> </a></li>
+											</ul>
+											<ul style="float: right;"><a href="">更多>></a></ul>
+									</ul>										
+								</div>
+							</div>
+							<script type="text/javascript">jQuery(".slideTxtBox").slide();</script>	
+						</div>
+						<div class="con4-lft-bottom">
+							<div class="slideTxtBox">
+								<div class="hd">
+									<ul style="float: left; font-size: 18px;color: #565656;">高端卡</ul>
+									<ul style="float: right;">
+										<li class="on"><a href="#">信用卡</a></li>
+										<li class="" style="margin-left: 10px;"><a href="#">借记卡</a></li>	
+									</ul>
+								</div>						
+								<div class="bd">
+									<ul style="display: block;">	
+											<ul style="float: left; line-height: 28px; margin-left: 5px;" >
+												<li style="float: left; width: 180px; text-align: center;"><a href=""><img src="img/card1.png"><p>中国银行无限信用卡</p> </a></li>
+												<li style="float: left; width: 180px; text-align: center;"><a href=""><img src="img/card2.png"><p>全币种国际芯片卡</p> </a></li>
+												<li style="float: left; width: 180px; text-align: center;"><a href=""><img src="img/card3.png"><p>长城环球通白金信用卡</p> </a></li>
+												<li style="float: left; width: 180px; text-align: center;"><a href=""><img src="img/card4.png"><p>长城美国运通卡</p> </a></li>
+											</ul>
+											<ul style="float: right;"><a href="">更多>></a></ul>
+											
+		
+									</ul>
+									<ul style="display: block;">								
+											<ul style="float: left; line-height: 28px; margin-left: 5px;" >
+												<li style="float: left; width: 180px; text-align: center;"><a href=""><img src="img/card1.png"><p>中国银行无限信用卡</p> </a></li>
+												<li style="float: left; width: 180px; text-align: center;"><a href=""><img src="img/card2.png"><p>全币种国际芯片卡</p> </a></li>
+												<li style="float: left; width: 180px; text-align: center;"><a href=""><img src="img/card3.png"><p>长城环球通白金信用卡</p> </a></li>
+												<li style="float: left; width: 180px; text-align: center;"><a href=""><img src="img/card4.png"><p>长城美国运通卡</p> </a></li>
+											</ul>
+											<ul style="float: right;"><a href="">更多>></a></ul>
+									</ul>										
+								</div>
+							</div>
+							<script type="text/javascript">jQuery(".slideTxtBox").slide();</script>											
+						</div>
+					</div>
+					<div class="con4-rht">
+						<ul style="text-align: center; height: 28px; font-size: 20px; background-color: #BA4A5C;"><a style="color: #FFFFFF;">实用信息</a></ul>
+						<ul style="padding-left: 10px; padding-right: 10px;   height: 390px; font-size: 18px; border: 1px solid lavender; padding-top: 20px;">
+							<li>·民生缴费</li>
+							<li>·申请信用卡</li>
+							<li>·快捷分期</li>
+							<li>·信用卡还款</li>
+							<li>·服务收费价格</li>
+							<li>·中国银行电子银行企业服务转账汇款费率表</li>
+							<li>·个人网上银行注册登陆常见问题</li>
+							<li>·个人网上银行首次登陆指引</li>
+						</ul>						
+						
+						
+						
+					</div>
+				</div>
+			</div>
+		<div class="bottom">
+			<a href=""><img src="img/bottom1.png"> </a>
+			<a href=""><img src="img/bottom2.png"> </a>
+			<a href=""><img src="img/bottom3.png"> </a>
+			<a href=""><img src="img/bottom4.png"> </a>
+			
+			
+		</div>
+		<div class="footer">
+			<a>
+				<img src="img/footer.png" />
+			</a>
+			
+		</div>
+<script>
+//控制导航选中
+$(document).ready(function(){
+	var curlocation = '首页,个人金融,出国金融';
+	var array = curlocation.split(",");
+	if(array.length < 2)
+		return false;
+	var curchannelname = array[1];
+	//逐个栏目进行分析，修改栏目样式
+	$("#BOC_NAVIGATOR_UL li").each(function(){
+		var curtext = $(this).find("a").eq(0).text();
+		if(curchannelname == curtext){
+			$("#BOC_NAVIGATOR_UL li").removeClass("current");
+			$(this).addClass("current");
+			return false;
+		}
+	});
+});
+</script>
+<script type="text/javascript">
+var pl_search_domain = "http://srh.bankofchina.com/search/";
+/**
+* @see 全站检索
+* @param obj:对象
+*/
+function search_for_site(){
+	//设置当前检索的 action
+	$("#trssearchform").attr("action",pl_search_domain+"sitesearch/index.jsp");
+	$("#trssearchform").submit();
+}
+</script>
+	<!--footer-end-->
+</div><!--wrapp end-->
+
+<script type="text/javascript" src="js/boc2013_jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="js/boc2013_bxCarousel.js"></script>
+<script type="text/javascript" src="js/boc2013_boc.js"></script>
+<script type="text/javascript" src="js/boc2013_share.js"></script>
+<script type="text/javascript">
+	$('#cb_1').elastislide({
+    imageW 	: 159,
+    minItems :1,
+	margin:0
+	});
+
+//内容点击切换
+function clickTab(){};
+clickTab.prototype = {
+	sd : function(menus,divs,openClass,closeClass){
+			var _this = this;
+			for(var i = 0;i<menus.length;i++){
+				_this.$(menus[i]).value = i;
+				_this.$(menus[i]).onclick = function(){
+					for(var j = 0;j<menus.length;j++){
+						_this.$(menus[j]).className = closeClass;	
+						_this.$(divs[j]).style.display = 'none';
+					}
+				_this.$(menus[this.value]).className = openClass;
+				_this.$(divs[this.value]).style.display = 'block';
+				return false;
+				}	
+			}
+		},	
+	$: function(oid){
+		if(typeof(oid) == 'string')
+			return document.getElementById(oid);
+			return oid;
+	}	
+}
+$(document).ready(function(){
+	var fina_box = $('.fina_box');
+	var i = 0;
+	fina_box.eq(0).show();
+	$('.fina_nav li').each(function(){
+		$(this).click(function(){
+			var index = $(this).index();
+			$(this).find('a').addClass('active');
+			$(this).siblings().find('a').removeClass('active');	
+			fina_box.hide();
+			fina_box.eq(index).show();
+			return false;
+		})	
+	})	
+	var CDmodel = new clickTab();
+	CDmodel.sd(['s01','s02','s03','s04','s05','s06'],['b01','b02','b03','b04','b05','b06'],'li_active','li_normal');
+	CDmodel.sd(['ss01','ss02','ss03','ss04','ss05','ss06'],['bb01','bb02','bb03','bb04','bb05','bb06'],'li_active','li_normal');
+	CDmodel.sd(['sss01','sss02','sss03'],['bbb01','bbb02','bbb03'],'li_active','li_normal');
+})
+
+</script>
+	</body>
+</html>

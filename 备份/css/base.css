@@ -1,0 +1,43 @@
+/*Normalize*/
+*{margin:0;padding:0;list-style-type:none;}
+*html,*html body /* 修正IE6振动bug */{
+    background-image:url(about:blank);
+    background-attachment:fixed;
+}
+body{
+    font-family:"Microsoft Yahei","Hiragino Sans GB" ,Arial,Lucida,Verdana,SimSun,Helvetica,sans-serif;
+    /*font-size : 62.5%; px数值除以10，然后换上em作为单位*/
+    /*min-width:980px;*/
+    font-size:13px;
+}
+a,img{border:none;text-decoration:none;}
+a{blr:expression(this.onFocus=this.blur());} /*去掉a标签的虚线框，避免出现奇怪的选中区域*/
+/*a:active {test:expression(target="_blank");}*/
+:focus{outline:0;}
+label{cursor:pointer;}
+img{vertical-align:middle;}
+table{empty-cells:show;border-collapse:collapse;border-spacing:0;}
+h1{font-size:1.6em;}h2,h3,h4{font-size:1.4em;}h5,h6{font-size:1.2em;}
+input{border:none;}
+textarea{overflow:scroll;}
+
+a, input,textarea, .hover-delay {
+    font-family:"Microsoft Yahei","Hiragino Sans GB", Arial,Lucida,Verdana,SimSun,Helvetica,sans-serif;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+input.none-radius{
+    border-radius:0;
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+}
+input::-ms-clear{ display:none;}  //去掉输入框的叉叉
+.clear{clear:both;}
+.txt-indent{text-indent:-999px;overflow:hidden;}
+input[type=text],input[type=tel],input[type=email]{
+-webkit-appearance: none;
+ box-shadow: none;}
+/*Normalize end*/
